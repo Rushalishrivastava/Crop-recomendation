@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the trained model and scaler
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('crop reccomendation\\rfc.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 @app.route('/')
